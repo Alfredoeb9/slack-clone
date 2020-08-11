@@ -1,13 +1,18 @@
 import React from 'react';
 import './App.css';
+import Header from './Header';
+import Sidebar from './Sidebar';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello clever programmer... Let's build the Slack Clone</h1>
+      <h1>Let's build the Slack Clone</h1>
       {/* Header */}
-      {/* Sidebar */}
-      {/* React-Router -> Chat screen */}
+      <Header />
+      <div className="app_body">
+        <Sidebar />
+        {/* React-Router -> Chat screen */}
+      </div>
     </div>
   );
 }
