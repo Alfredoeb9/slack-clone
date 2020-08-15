@@ -1,0 +1,9 @@
+body {
+  --chime-color: #16202b;
+  overflow: hidden;
+}
+
+.app_body {
+  display: flex;
+  height: 100vh;
+}
