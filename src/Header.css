@@ -9,7 +9,7 @@
 
 .header_left {
   display: flex;
-  /* take up 30% of the container */
+
   flex: 0.3;
   align-items: center;
   margin-left: 20px;

@@ -20,7 +20,7 @@ function Login() {
         dispatch({
           type: actionTypes.SET_USER,
           user: result.user,
-        })
+        });
 
       })
       .catch(error => {
