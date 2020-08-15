@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
-  background: var(--slack-color);
+  background: var(--chime-color);
   color: #fff;
 }
 
@@ -25,7 +25,7 @@
   text-align: center;
   display: flex;
   flex: 0.4;
-  background-color: #421f44;
+  background-color: #fff;
   padding: 0 50px;
   color: gray;
   border: 1px gray solid;

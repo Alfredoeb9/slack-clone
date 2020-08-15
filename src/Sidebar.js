@@ -13,10 +13,13 @@ import AppsIcon from '@material-ui/icons/Apps';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AddIcon from '@material-ui/icons/Add';
+import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import db from './firebase';
+import { useStateValue } from './StateProvider';
 
 function Sidebar() {
   const [channels, setChannels] = useState([]);
+  const [{ user }] = useStateValue();
 
   useEffect(() => {
     // Run this code ONCE when the sidebar component loads using []
@@ -36,15 +39,15 @@ function Sidebar() {
     <div className="sidebar">
       <div className="sidebar_header">
         <div className="sidebar_info">
-          <h2>Clever Programmer</h2>
           <h3>
             <FiberManualRecordIcon />
-            Alfredo Barillas
+            {user?.displayName}
           </h3>
         </div>
         <CreateIcon />
       </div>
-      <SidebarOption Icon={InsertCommentIcon} title="Threads" />
+      <h4 className="sidebar_title">MEETINGS AND CALLS</h4>
+      <SidebarOption Icon={AccessTimeIcon} title="Call History" />
       <SidebarOption Icon={InboxIcon} title="Mentions & Reactions" />
       <SidebarOption Icon={DraftsIcon} title="Saved items" />
       <SidebarOption Icon={BookmarkBorderIcon} title="Channel browser" />
@@ -53,8 +56,7 @@ function Sidebar() {
       <SidebarOption Icon={FileCopyIcon} title="File browser" />
       <SidebarOption Icon={ExpandLessIcon} title="Show less" />
       <hr />
-      <SidebarOption Icon={ExpandMoreIcon} title="Channels" />
-      <hr />
+      <h4 className="sidebar_title">CHAT ROOMS</h4>
       <SidebarOption Icon={AddIcon} addChannelOption title="Add Channels" />
 
       {/* Conect to DB and list all the channels */}
