@@ -1,8 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Chime-clone
 
-## Available Scripts
-
-In the project directory, you can run:
+Amazon chime clone basic idea of this app is to be able to create new chat rooms move between chats without reloading page, authentication using google(security), and post messages into chat.
 
 ### `npm start`
 
@@ -12,57 +10,22 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `npm test`
+### `Hosted`
+This is app is using Google's Firebase to host the app as well as storing the database.
+[chime-clone](https://slack-clone-e0e94.web.app/)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Functions used`
 
-### `npm run build`
+During this build I was able to take advantage of Reacts; state and props passing user data between files and database.
+I also implemented Reacts, Router and Switch to keep track of 'chat rooms' and switching between rooms and pulling that Id to match the current URL.
+Also implemented Reacts; context API to always lisen and fire when ex. a new chat room is created or a new message is posted taking advantage of reducer, initialState, and children(App)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Built With
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+* [React](https://github.com/facebook/create-react-app) - The front-end framework used
+* [Material UI](https://material-ui.com/) - CSS modules
+* [Firebase](https://firebase.google.com/) - noSQL database storage
+* [Firebase Hosting](https://firebase.google.com/) - Hosting provider
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Authors
+* **Alfredo Barillas** - *Programmer*
